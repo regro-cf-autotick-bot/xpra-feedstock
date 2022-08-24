@@ -12,7 +12,7 @@ source:
 build:
   skip: true  # [not linux]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -82,8 +82,13 @@ requirements:
     - xorg-libxi
     - xorg-libxfixes
     - xorg-libxext
-    - libxkbfile  # [linux]
+    - libxkbfile
     - gtk3
+    - pygobject
+    - paramiko
+    - dbus-python
+    - zeroconf
+    - pillow
     - cairo
     - sshpass
     - ffmpeg
