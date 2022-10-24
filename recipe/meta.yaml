@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  script: {{ PYTHON }} -m pip install . -vv
+  script: INCLUDE_DIRS=/usr/include:$CONDA_PREFIX/x86_64-conda-linux-gnu/sysroot/usr/include:$CONDA_PREFIX/usr/include {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
