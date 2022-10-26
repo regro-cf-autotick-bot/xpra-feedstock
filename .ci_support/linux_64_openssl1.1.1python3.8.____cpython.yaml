@@ -19,7 +19,7 @@ ffmpeg:
 glib:
 - '2'
 gstreamer:
-- '1.20'
+- '1.21'
 libjpeg_turbo:
 - '2'
 libpng:
