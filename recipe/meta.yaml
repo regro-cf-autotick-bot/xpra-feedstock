@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --install-option "--without-cuda_kernels --without-cuda_rebuild"
   number: 0
 
 requirements:
