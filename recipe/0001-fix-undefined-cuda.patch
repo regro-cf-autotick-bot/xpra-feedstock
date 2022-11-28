@@ -1,0 +1,14 @@
+diff --git a/setup.py b/setup.py
+index 22a2256b8..241378af2 100755
+--- a/setup.py
++++ b/setup.py
+@@ -2045,8 +2045,8 @@ def add_cython_ext(*_args, **_kwargs):
+ 
+ nvidia_ENABLED = nvenc_ENABLED or nvfbc_ENABLED or nvjpeg_encoder_ENABLED or nvjpeg_decoder_ENABLED
+ toggle_packages(nvidia_ENABLED, "xpra.codecs.nvidia")
++CUDA_BIN = f"{share_xpra}/cuda"
+ if nvidia_ENABLED:
+-    CUDA_BIN = f"{share_xpra}/cuda"
+     #find nvcc:
+     from xpra.util import sorted_nicely  # pylint: disable=import-outside-toplevel
+     path_options = os.environ.get("PATH", "").split(os.path.pathsep)
