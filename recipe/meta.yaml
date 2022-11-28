@@ -1,5 +1,5 @@
 {% set name = "xpra" %}
-{% set version = "4.4.2" %}
+{% set version = "4.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,10 @@ package:
 
 source:
   url: https://github.com/Xpra-org/xpra/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 19555b8e89f4304023e7ad6d0e342038f0e06bd37824144dff32c32ed8544cca
+  sha256: fc394c5b346791cc941c8917bbdd44bb26be76a021e497fa6f661e62cc4dd57a
+  patches:
+  # Patch for CUDA_BIN bug, d4ff2b0a6a966dffdc1856ea5d3cc5a57f2239bf
+  - 0001-fix-undefined-cuda.patch
 
 build:
   skip: true  # [not linux]
