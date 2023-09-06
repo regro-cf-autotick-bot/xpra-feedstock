@@ -8,14 +8,11 @@ package:
 source:
   url: https://github.com/Xpra-org/xpra/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 69bf2da133a6ee28ad4e3a849f997b32e5bab4f4b616ff5acd0811e8ac9e4c14
-  # patches:
-  # Patch for CUDA_BIN bug, d4ff2b0a6a966dffdc1856ea5d3cc5a57f2239bf
-  # - 0001-fix-undefined-cuda.patch
 
 build:
   skip: true  # [not linux]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
