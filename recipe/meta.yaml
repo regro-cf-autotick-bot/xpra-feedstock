@@ -1,5 +1,5 @@
 {% set name = "xpra" %}
-{% set version = "5.0.7" %}
+{% set version = "5.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Xpra-org/xpra/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: ee9c0d8510153fda25bb9d898b0a98e6a1d93d933549e76dfaf548345a2a26f8
+  sha256: f5cec743cbaa131b91e47fba3f7dd78213948dd44afab2eb6dc3b3091386ba6e
 
 build:
   skip: true  # [not linux]
