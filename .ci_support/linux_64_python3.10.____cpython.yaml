@@ -2,6 +2,10 @@ c_compiler:
 - gcc
 c_compiler_version:
 - '12'
+c_stdlib:
+- sysroot
+c_stdlib_version:
+- '2.12'
 cdt_name:
 - cos6
 channel_sources:
@@ -19,7 +23,7 @@ ffmpeg:
 glib:
 - '2'
 gstreamer:
-- '1.22'
+- '1.24'
 libjpeg_turbo:
 - '3'
 libpng:
@@ -43,3 +47,5 @@ x265:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
+- - c_stdlib_version
+  - cdt_name
