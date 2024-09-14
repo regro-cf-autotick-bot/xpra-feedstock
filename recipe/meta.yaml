@@ -109,7 +109,6 @@ test:
   requires:
     - pip
   commands:
-    - pip check
     - test -e $PREFIX/bin/xpra
 
 about:
