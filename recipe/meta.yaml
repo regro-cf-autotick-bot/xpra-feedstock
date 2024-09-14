@@ -72,6 +72,7 @@ requirements:
     - lame
     - pandoc
     - rencode
+    - xxhash
   run:
     - python
     - libcxx
@@ -100,6 +101,7 @@ requirements:
     - libvpx
     - libjpeg-turbo
     - rencode
+    - xxhash
 
 test:
   imports:
