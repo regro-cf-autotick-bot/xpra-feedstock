@@ -22,6 +22,7 @@ requirements:
     - pkg-config
   host:
     - python
+    - setuptools
     - pip
     - xorg-libx11
     - xorg-libxrandr
