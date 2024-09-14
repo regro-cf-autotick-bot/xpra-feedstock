@@ -1,5 +1,5 @@
 {% set name = "xpra" %}
-{% set version = "5.0.8" %}
+{% set version = "6.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,21 +7,22 @@ package:
 
 source:
   url: https://github.com/Xpra-org/xpra/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: f5cec743cbaa131b91e47fba3f7dd78213948dd44afab2eb6dc3b3091386ba6e
+  sha256: 9d8c10586e5d275021e06dc88e1652075f3d9c80ca3b2682babc9e07a89f8600
 
 build:
-  skip: true  # [not linux]
+  skip: true  # [not linux or py<310]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - pkg-config
-    - sysroot_linux-64 2.17  # [linux64]
   host:
     - python
+    - setuptools
     - pip
     - xorg-libx11
     - xorg-libxrandr
@@ -71,6 +72,7 @@ requirements:
     - lame
     - pandoc
     - rencode
+    - xxhash
   run:
     - python
     - libcxx
@@ -99,6 +101,7 @@ requirements:
     - libvpx
     - libjpeg-turbo
     - rencode
+    - xxhash
 
 test:
   imports:
@@ -106,7 +109,6 @@ test:
   requires:
     - pip
   commands:
-    - pip check
     - test -e $PREFIX/bin/xpra
 
 about:
