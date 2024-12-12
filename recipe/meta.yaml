@@ -43,6 +43,7 @@ requirements:
     - xorg-fixesproto
     - xorg-randrproto
     - xorg-renderproto
+    - xorg-recordproto
     - libxkbfile
     - cython
     - glib
@@ -97,6 +98,7 @@ requirements:
     - xorg-fixesproto
     - xorg-randrproto
     - xorg-renderproto
+    - xorg-recordproto
     - libxkbfile
     - gtk3
     - pygobject
