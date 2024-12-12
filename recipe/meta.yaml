@@ -36,7 +36,7 @@ requirements:
     - xorg-xineramaproto
     - xorg-libxscrnsaver
     - xorg-libxi
-    - xorg-libxfixes
+    - xorg-libxfixes =5
     - xorg-libxext
     - xorg-kbproto
     - xorg-xproto
@@ -88,7 +88,7 @@ requirements:
     - xorg-libxres
     - xorg-xineramaproto
     - xorg-libxi
-    - xorg-libxfixes
+    - xorg-libxfixes =5
     - xorg-libxext
     - xorg-kbproto
     - xorg-xproto
