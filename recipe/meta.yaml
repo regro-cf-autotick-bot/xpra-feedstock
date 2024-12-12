@@ -1,5 +1,5 @@
 {% set name = "xpra" %}
-{% set version = "6.1.2" %}
+{% set version = "6.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/Xpra-org/xpra/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e25a550f48f30e130b7da8ece1db2e8addd80e02ce059dab34f07c6b5d9a91b6
+  sha256: a889d00a197a33a79062c786b54badcc6388aa1b28b0c9506f2aee6eab877180
 
 build:
   skip: true  # [not linux or py<310]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -36,8 +36,14 @@ requirements:
     - xorg-xineramaproto
     - xorg-libxscrnsaver
     - xorg-libxi
-    - xorg-libxfixes
+    - xorg-libxfixes =5
     - xorg-libxext
+    - xorg-kbproto
+    - xorg-xproto
+    - xorg-fixesproto
+    - xorg-randrproto
+    - xorg-renderproto
+    - xorg-recordproto
     - libxkbfile
     - cython
     - glib
@@ -67,6 +73,7 @@ requirements:
     - libwebp
     - libpng
     - libjpeg-turbo
+    - zlib
     - pillow
     - gstreamer
     - libogg
@@ -85,8 +92,14 @@ requirements:
     - xorg-libxres
     - xorg-xineramaproto
     - xorg-libxi
-    - xorg-libxfixes
+    - xorg-libxfixes =5
     - xorg-libxext
+    - xorg-kbproto
+    - xorg-xproto
+    - xorg-fixesproto
+    - xorg-randrproto
+    - xorg-renderproto
+    - xorg-recordproto
     - libxkbfile
     - gtk3
     - pygobject
@@ -103,6 +116,7 @@ requirements:
     - libjpeg-turbo
     - rencode
     - xxhash
+    - zlib
 
 test:
   imports:
