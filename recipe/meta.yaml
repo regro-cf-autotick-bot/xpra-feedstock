@@ -73,6 +73,7 @@ requirements:
     - libwebp
     - libpng
     - libjpeg-turbo
+    - libzlib
     - pillow
     - gstreamer
     - libogg
@@ -115,6 +116,7 @@ requirements:
     - libjpeg-turbo
     - rencode
     - xxhash
+    - libzlib
 
 test:
   imports:
