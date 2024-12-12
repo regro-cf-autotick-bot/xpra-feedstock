@@ -40,6 +40,7 @@ requirements:
     - xorg-libxext
     - xorg-kbproto
     - xorg-xproto
+    - xorg-fixesproto
     - libxkbfile
     - cython
     - glib
@@ -91,6 +92,7 @@ requirements:
     - xorg-libxext
     - xorg-kbproto
     - xorg-xproto
+    - xorg-fixesproto
     - libxkbfile
     - gtk3
     - pygobject
