@@ -38,6 +38,7 @@ requirements:
     - xorg-libxi
     - xorg-libxfixes
     - xorg-libxext
+    - xorg-kbproto
     - xorg-xproto
     - libxkbfile
     - cython
@@ -88,6 +89,7 @@ requirements:
     - xorg-libxi
     - xorg-libxfixes
     - xorg-libxext
+    - xorg-kbproto
     - xorg-xproto
     - libxkbfile
     - gtk3
