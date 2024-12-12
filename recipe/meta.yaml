@@ -38,6 +38,7 @@ requirements:
     - xorg-libxi
     - xorg-libxfixes
     - xorg-libxext
+    - xorg-xproto
     - libxkbfile
     - cython
     - glib
@@ -87,6 +88,7 @@ requirements:
     - xorg-libxi
     - xorg-libxfixes
     - xorg-libxext
+    - xorg-xproto
     - libxkbfile
     - gtk3
     - pygobject
