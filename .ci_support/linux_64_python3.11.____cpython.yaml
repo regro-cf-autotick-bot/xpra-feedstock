@@ -44,6 +44,10 @@ x264:
 - 1!164.*
 x265:
 - '3.5'
+xxhash:
+- 0.8.3
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
+zlib:
+- '1'
